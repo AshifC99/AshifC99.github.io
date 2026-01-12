@@ -1,7 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { useEffect, useRef, useState } from "react";
+import { Github, Linkedin, Mail } from "lucide-react";
 import manifest from "../../public/manifest.json";
-import { Linkedin, Github, Mail } from "lucide-react";
 import LetterGlitch from "../components/LetterGlitch";
 import "../styles/landing.css";
 
@@ -16,7 +16,7 @@ function App() {
   useEffect(() => {
     const heroTitle = document.querySelector('.hero-title');
     if (heroTitle && !heroTitle.getAttribute('data-typed')) {
-      const text = heroTitle.textContent?.trim() || "Ciao, sono Ashif";
+      const text = heroTitle.textContent ? heroTitle.textContent.trim() : "Ciao, sono Ashif";
       heroTitle.innerHTML = '';
       heroTitle.setAttribute('data-typed', 'true');
       let index = 0;
@@ -39,7 +39,7 @@ function App() {
       const scrollPosition = window.scrollY;
 
       // Parallax
-      const stars = document.querySelector('.stars') as HTMLElement;
+      const stars = document.querySelector('.stars');
       if (stars) {
         stars.style.transform = `translateY(${scrollPosition * 0.5}px)`;
       }
@@ -62,7 +62,7 @@ function App() {
       document.querySelectorAll('.nav-link').forEach(link => {
         const href = link.getAttribute('href');
         if (href && href.startsWith('#')) {
-          const section = document.querySelector(href) as HTMLElement;
+          const section = document.querySelector(href);
           if (section) {
             const sectionTop = section.offsetTop - 100;
             const sectionBottom = sectionTop + section.offsetHeight;
@@ -78,7 +78,7 @@ function App() {
       });
     }
 
-    let lastScrollPosition = { current: 0 }; // Mutable ref-like object for closure
+    const lastScrollPosition = { current: 0 }; // Mutable ref-like object for closure
 
     window.addEventListener('scroll', handleScroll);
 
@@ -260,12 +260,13 @@ function App() {
         </div>
       </section>
 
-      {false && (<> {/* Projects Section */}
+      {/* Projects Section - Disabled */}
+      {/* 
         <section id="projects" className="projects">
           <div className="container">
             <h2 className="section-title">I Miei Progetti</h2>
             <div className="projects-grid">
-              {/* Project Card 1 */}
+              {/* Project Card 1 *}
               <div className="project-card">
                 <div className="project-image">
                   <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=870&auto=format&fit=crop" alt="Progetto 1" />
@@ -284,7 +285,7 @@ function App() {
                 </div>
               </div>
 
-              {/* Project Card 2 */}
+              {/* Project Card 2 *}
               <div className="project-card">
                 <div className="project-image">
                   <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=870&auto=format&fit=crop" alt="Progetto 2" />
@@ -303,7 +304,7 @@ function App() {
                 </div>
               </div>
 
-              {/* Project Card 3 */}
+              {/* Project Card 3 *}
               <div className="project-card">
                 <div className="project-image">
                   <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=870&auto=format&fit=crop" alt="Progetto 3" />
@@ -322,7 +323,7 @@ function App() {
                 </div>
               </div>
 
-              {/* Project Card 4 */}
+              {/* Project Card 4 *}
               <div className="project-card">
                 <div className="project-image">
                   <img src="https://images.unsplash.com/photo-1516321318423-f06f70d504f0?q=80&w=870&auto=format&fit=crop" alt="Progetto 4" />
@@ -341,7 +342,7 @@ function App() {
                 </div>
               </div>
 
-              {/* Project Card 5 */}
+              {/* Project Card 5 *}
               <div className="project-card">
                 <div className="project-image">
                   <img src="https://images.unsplash.com/photo-1511376979264-da6635d67151?q=80&w=870&auto=format&fit=crop" alt="Progetto 5" />
@@ -360,7 +361,7 @@ function App() {
                 </div>
               </div>
 
-              {/* Project Card 6 */}
+              {/* Project Card 6 *}
               <div className="project-card">
                 <div className="project-image">
                   <img src="https://images.unsplash.com/photo-1512941691920-25bda36be85d?q=80&w=870&auto=format&fit=crop" alt="Progetto 6" />
@@ -380,7 +381,8 @@ function App() {
               </div>
             </div>
           </div>
-        </section></>)}
+        </section>
+      */}
 
       {/* Contact Section */}
       <section id="contact" className="contact">
@@ -396,9 +398,9 @@ function App() {
               const form = e.target as HTMLFormElement;
               const formData = new FormData(form);
               const inputs = form.querySelectorAll('input');
-              const name = (inputs[0] as HTMLInputElement).value;
-              const email = (inputs[1] as HTMLInputElement).value;
-              const subject = (inputs[2] as HTMLInputElement).value;
+              const name = (inputs[0]).value;
+              const email = (inputs[1]).value;
+              const subject = (inputs[2]).value;
               const message = (form.querySelector('textarea') as HTMLTextAreaElement).value;
 
               const mailtoLink = `mailto:ashifc99.github.io.bounce673@passfwd.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Nome: ${name}\nEmail: ${email}\n\nMessaggio:\n${message}`)}`;
