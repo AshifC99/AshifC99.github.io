@@ -266,7 +266,7 @@ function App() {
           <div className="container">
             <h2 className="section-title">I Miei Progetti</h2>
             <div className="projects-grid">
-              {/* Project Card 1 *}
+              Project Card 1
               <div className="project-card">
                 <div className="project-image">
                   <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=870&auto=format&fit=crop" alt="Progetto 1" />
@@ -285,7 +285,7 @@ function App() {
                 </div>
               </div>
 
-              {/* Project Card 2 *}
+              Project Card 2
               <div className="project-card">
                 <div className="project-image">
                   <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=870&auto=format&fit=crop" alt="Progetto 2" />
@@ -304,7 +304,7 @@ function App() {
                 </div>
               </div>
 
-              {/* Project Card 3 *}
+              Project Card 3
               <div className="project-card">
                 <div className="project-image">
                   <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=870&auto=format&fit=crop" alt="Progetto 3" />
@@ -323,7 +323,7 @@ function App() {
                 </div>
               </div>
 
-              {/* Project Card 4 *}
+              Project Card 4
               <div className="project-card">
                 <div className="project-image">
                   <img src="https://images.unsplash.com/photo-1516321318423-f06f70d504f0?q=80&w=870&auto=format&fit=crop" alt="Progetto 4" />
@@ -342,7 +342,7 @@ function App() {
                 </div>
               </div>
 
-              {/* Project Card 5 *}
+              Project Card 5
               <div className="project-card">
                 <div className="project-image">
                   <img src="https://images.unsplash.com/photo-1511376979264-da6635d67151?q=80&w=870&auto=format&fit=crop" alt="Progetto 5" />
@@ -361,7 +361,7 @@ function App() {
                 </div>
               </div>
 
-              {/* Project Card 6 *}
+              Project Card 6
               <div className="project-card">
                 <div className="project-image">
                   <img src="https://images.unsplash.com/photo-1512941691920-25bda36be85d?q=80&w=870&auto=format&fit=crop" alt="Progetto 6" />
