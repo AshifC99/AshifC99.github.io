@@ -1,0 +1,25 @@
+{
+  "short_name": "Ashif C.",
+  "name": "Ashif C. Portfolio",
+  "icons": [
+    {
+      "src": "Logo/16x16/-1 Circle 16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "Logo/185x185/-1 Circle 185x185.png",
+      "sizes": "185x185",
+      "type": "image/png"
+    },
+    {
+      "src": "Logo/500x500/-1 Circle 500x500.png",
+      "sizes": "500x500",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
