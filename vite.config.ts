@@ -6,7 +6,8 @@ import viteTsConfigPaths from 'vite-tsconfig-paths'
 import tailwindcss from '@tailwindcss/vite'
 import { nitro } from 'nitro/vite'
 
-const config = defineConfig({
+// https://vitejs.dev/config/
+export default defineConfig({
   plugins: [
     devtools(),
     nitro(),
@@ -18,6 +19,5 @@ const config = defineConfig({
     tanstackStart(),
     viteReact(),
   ],
+  base: "/AshifC99.github.io/"
 })
-
-export default config
