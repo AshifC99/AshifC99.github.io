@@ -19,5 +19,5 @@ export default defineConfig({
     tanstackStart(),
     viteReact(),
   ],
-  base: "/AshifC99.github.io/"
+  base: "/"
 })

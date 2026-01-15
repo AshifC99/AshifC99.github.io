@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "version": "0.0.3",
-  "homepage": "https://AshifC99.github.io/AshifC99.github.io",
+  "homepage": "https://AshifC99.github.io",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
