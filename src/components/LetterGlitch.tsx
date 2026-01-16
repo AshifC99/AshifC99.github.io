@@ -1,7 +1,8 @@
-import { useRef, useEffect, FC, CSSProperties } from 'react';
+import { useEffect, useRef } from 'react';
+import type { CSSProperties, FC } from 'react';
 
 interface LetterGlitchProps {
-    glitchColors?: string[];
+    glitchColors?: Array<string>;
     className?: string;
     glitchSpeed?: number;
     centerVignette?: boolean;
@@ -39,7 +40,7 @@ const LetterGlitch: FC<LetterGlitchProps> = ({
 }) => {
     const canvasRef = useRef<HTMLCanvasElement>(null);
     const animationRef = useRef<number | null>(null);
-    const letters = useRef<Letter[]>([]);
+    const letters = useRef<Array<Letter>>([]);
     const grid = useRef<Grid>({ columns: 0, rows: 0 });
     const context = useRef<CanvasRenderingContext2D | null>(null);
     const lastGlitchTime = useRef<number>(Date.now());
@@ -142,7 +143,7 @@ const LetterGlitch: FC<LetterGlitchProps> = ({
     };
 
     const updateLetters = (): void => {
-        if (!letters.current || letters.current.length === 0) return;
+        if (letters.current.length === 0) return;
 
         const updateCount = Math.max(1, Math.floor(letters.current.length * 0.05));
 
@@ -163,8 +164,9 @@ const LetterGlitch: FC<LetterGlitchProps> = ({
     };
 
     const handleSmoothTransitions = (): void => {
-        let needsRedraw = false;
-        letters.current.forEach(letter => {
+        let hasUpdates = false;
+        
+        for (const letter of letters.current) {
             if (letter.colorProgress < 1) {
                 letter.colorProgress += 0.05;
                 if (letter.colorProgress > 1) letter.colorProgress = 1;
@@ -173,12 +175,13 @@ const LetterGlitch: FC<LetterGlitchProps> = ({
                 const endRgb = hexToRgb(letter.targetColor);
                 if (startRgb && endRgb) {
                     letter.color = interpolateColor(startRgb, endRgb, letter.colorProgress);
-                    needsRedraw = true;
+                    hasUpdates = true;
                 }
             }
-        });
+        }
 
-        if (needsRedraw) {
+        // Redraw canvas if any letter colors were updated
+        if (hasUpdates) {
             drawLetters();
         }
     };
@@ -227,7 +230,6 @@ const LetterGlitch: FC<LetterGlitchProps> = ({
             }
             window.removeEventListener('resize', handleResize);
         };
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [glitchSpeed, smooth]);
 
     const containerStyle: CSSProperties = {
