@@ -1,0 +1,110 @@
+---
+layout: default
+---
+
+<section id="home" class="hero">
+    <div class="hero-glitch" id="glitch-root" aria-hidden="true"></div>
+    <div class="hero-content">
+        <h1 class="hero-title">Ciao, sono Ashif</h1>
+        <p class="hero-subtitle">Benvenuto nel mio portfolio!</p>
+        <p class="hero-description">{ Edge Developer }</p>
+        <div class="hero-cta">
+            <a href="#about" class="btn btn-primary">Cosa faccio?</a>
+            <a href="#contact" class="btn btn-secondary">Contattami</a>
+        </div>
+    </div>
+</section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Chi Sono</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">Sono un appassionato di informatica e di tutto ciò che riguarda il mondo
+                        della tecnologia.</p>
+                    <p>Ogni giorno cerco di imparare qualcosa di nuovo e migliorare le mie conoscenze.</p>
+                    <p>Attualmente lavoro nel Front-Desk di un Hotel e frequento il corso
+                        <a href="https://www.itsprodigi.it/corsi/edge-developer/" target="_blank">"Edge Developer"</a>
+                        presso ITS Prodigi.
+                    </p>
+                    <p>Trovi il mio programma di studi <a href="Programma EDGE DEVELOPER.pdf" target="_blank">qui</a>.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <div class="floating-card" style="--delay:0s">
+                        <div class="card-content">📱</div>
+                    </div>
+                    <div class="floating-card" style="--delay:1s">
+                        <div class="card-content">&lt;/&gt;</div>
+                    </div>
+                    <div class="floating-card" style="--delay:2s">
+                        <div class="card-content">{}</div>
+                    </div>
+                    <div class="floating-card" style="--delay:3s">
+                        <div class="card-content">💻</div>
+                    </div>
+                    <div class="floating-card" style="--delay:4s">
+                        <div class="card-content">🧠</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Cosa sto imparando</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">🏗️</div>
+                    <h3>Frontend</h3>
+                    <p>HTML5, CSS3, JavaScript, React, Vue.js, Tailwind CSS</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">⚙️</div>
+                    <h3>Backend</h3>
+                    <p>Node.js, Python, PHP, Express, REST APIs, Databases</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🎯</div>
+                    <h3>Design</h3>
+                    <p>UI/UX Design, Figma, Responsive Design, Prototyping</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🛠️</div>
+                    <h3>Tools & DevOps</h3>
+                    <p>Git, Docker, AWS, GitHub, VS Code, CI/CD</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contattami</h2>
+            <div class="contact-content">
+                <form class="contact-form">
+                    <input type="text" placeholder="Il tuo nome" required />
+                    <input type="email" placeholder="La tua email" required />
+                    <input type="text" placeholder="Oggetto" required />
+                    <textarea placeholder="Il tuo messaggio" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Invia Messaggio</button>
+                </form>
+
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h4>Email</h4>
+                        <p>ashifc99.github.io.bounce673@passfwd.com</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>LinkedIn</h4>
+                        <p>linkedin.com/in/ashifchowdhury/</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>GitHub</h4>
+                        <p>github.com/AshifC99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
