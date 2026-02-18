@@ -1,6 +1,5 @@
 # Hugo and Blowfish
-public/
-resources/
+
 exampleSite/resources/
 
 # Binaries for programs and plugins
