@@ -13,7 +13,7 @@
 
 [[main]]
   name = "About me"
-  pageRef = "about"
+  pageRef = "/posts/en/about/"
   weight = 10
 
 #[[main]]
