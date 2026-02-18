@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Vuoi essere la mia Valentina?</title>
+
+    <style>
+        body {
+            font-family: 'Arial';
+            text-align: center;
+            background-color: #ffe6f2;
+            overflow: hidden;
+        }
+
+        h1 {
+            margin-top: 60px;
+            color: #ff3377;
+            font-size: 40px;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 22px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.15);
+        }
+
+        #yesBtn {
+            background-color: #ff4d94;
+            color: white;
+        }
+
+        #noBtn {
+            background-color: #999;
+            color: white;
+            position: absolute;
+        }
+
+        /* Cuoricini che cadono */
+        .heart {
+            position: fixed;
+            top: -10px;
+            font-size: 25px;
+            color: #ff6699;
+            animation: fall 3s linear forwards;
+        }
+
+        @keyframes fall {
+            0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Vuoi essere la mia Valentina? 💘</h1>
+
+    <div id="buttons">
+        <button id="yesBtn" onclick="yes()">Sì 💕</button>
+        <button id="noBtn" onmouseover="moveButton()">No 😢</button>
+    </div>
+
+    <script>
+        // il bottone NO si sposta
+        function moveButton() {
+            const x = Math.random() * (window.innerWidth - 100);
+            const y = Math.random() * (window.innerHeight - 100);
+            const btn = document.getElementById("noBtn");
+            btn.style.left = x + "px";
+            btn.style.top = y + "px";
+        }
+
+        // cuoricini che cadono
+        function createHeart() {
+            const heart = document.createElement("div");
+            heart.classList.add("heart");
+            heart.innerHTML = "💖";
+            heart.style.left = Math.random() * window.innerWidth + "px";
+            document.body.appendChild(heart);
+
+            setTimeout(() => heart.remove(), 3000);
+        }
+
+        setInterval(createHeart, 300);
+
+        // Quando clicca SÌ ❤️
+        function yes() {
+            document.body.innerHTML = `
+                <h1 style="color:#ff3377; font-size:50px; animation:pulse 1.5s infinite;">
+                    Sapevo che avresti detto SÌ! 💖🥰<br>
+                    Sei la mia persona speciale! ❤️
+                </h1>
+            `;
+        }
+    </script>
+
+</body>
+</html>
