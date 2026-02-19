@@ -64,8 +64,8 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   disableHeroImageFilter = false # only used when layout equals hero
 
 [article]
-  showDate = true
-   dateFormat = "Mon, 02 Jan 2006" # https://golang.org/pkg/time/#Time.Format
+  showDate = false
+   dateFormat = "Mon 02 Jan 2006" # https://golang.org/pkg/time/#Time.Format
   showViews = false
   showLikes = false
   showDateOnlyInArticle = true # if true, the date will only be shown in the article page, not in the article list
