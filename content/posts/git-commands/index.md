@@ -8,6 +8,7 @@ tags: ["welcome", "new", "about", "first"]
 
 # comandi Git che qualunque sviluppatore dovrebbe sapere
 
+
 ### 1. Configurazione iniziale di Git
 
 `git config --global user.name "Tuo Nome"` - impostare username globale
@@ -18,8 +19,6 @@ tags: ["welcome", "new", "about", "first"]
 
 `git help <comando>` - vedere manuale di un comando
 
->```
->```
 
 ### 2. Creazione e clonazione 
 
@@ -29,320 +28,294 @@ tags: ["welcome", "new", "about", "first"]
 
 `git clone --depth 1 <url>`
 
-### 3.
+### 3. Stato e ispezione
 
-### 4.
+`git status` - mostra lo stato della working tree
 
-### 5. 
+`git log` - mostra la cronologia completa dei commit
 
-### 6.
+`git log --oneline` - mostra la cronologia in formato compatto
 
-### 7.
+`git log --graph --decorate --all` - mostra la cronologia con grafo dei branch
 
-Indice
-------
-1) Configurazione iniziale
-2) Creazione e clonazione
-3) Stato e ispezione
-4) Aggiunta e commit
-5) Branching
-6) Checkout & Switch
-7) Merge & Rebase
-8) Remote
-9) Push & Pull
-10) Stash
-11) Tag
-12) Pulizia e manutenzione
-13) Comandi avanzati
-14) Troubleshooting e recovery
-15) Workflow e best practice
-16) Comandi e pattern avanzati per DevOps / CI/CD
-17) Ganci (Git hooks) per automazioni locali
+`git show <commit>` - mostra i dettagli di un commit
 
--------------------------------------------------
-1) Configurazione iniziale
--------------------------------------------------
-# Imposta identità globale
-`git config --global user.name "Tuo Nome"`
-`git config --global user.email "tu@email.com"`
+`git diff` - mostra differenze non ancora in stage
 
-# Editor e opzioni qualità della vita
-`git config --global core.editor "code --wait"`          # VS Code
-`git config --global init.defaultBranch main`             # ramo predefinito
+`git diff --staged` - mostra differenze già in stage
 
-# Alias utili
-`git config --global alias.st "status -sb"`
-`git config --global alias.lg "log --oneline --graph --decorate --all"`
 
-# Verifica configurazione
-`git config --list`
+### 4. Aggiunta e commit
 
--------------------------------------------------
-2) Creazione e clonazione
--------------------------------------------------
-`git init`                                            # Inizializza repository
-`git clone <url>`                                     # Clona completo
-`git clone --depth 1 <url>`                           # Clona superficiale (shallow)
-`git clone --single-branch -b <branch> <url>`         # Solo un ramo specifico
+`git add <file>` - aggiunge un file all'area di stage
 
--------------------------------------------------
-3) Stato e ispezione
--------------------------------------------------
-`git status`                                          # Stato working tree
-`git log`                                             # Cronologia completa
-`git log --oneline`                                   # Compatta
-`git log --graph --decorate --all`                    # Vista grafo
-`git show <commit>`                                   # Dettaglio commit
-`git diff`                                            # Differenze non indicizzate
-`git diff --staged`                                   # Differenze staged
+`git add .` - aggiunge tutte le modifiche all'area di stage
 
--------------------------------------------------
-4) Aggiunta e commit
--------------------------------------------------
-git add <file>                                      # Aggiunge un file
-git add .                                           # Aggiunge tutto
-git add -p                                          # Add interattivo (patch)
-git commit -m "Messaggio"                           # Commit semplice
-git commit --amend                                  # Modifica ultimo commit
-git reset <file>                                    # Toglie file dallo stage
-git reset --soft HEAD~1                             # Torna indietro mantenendo changes
-git reset --hard HEAD~1                             # Torna indietro perdendo changes
+`git add -p` - aggiunta interattiva a blocchi
 
--------------------------------------------------
-5) Branching
--------------------------------------------------
-git branch                                          # Elenco rami locali
-git branch <nome>                                   # Crea ramo
-git branch -d <nome>                                # Elimina ramo se mergiato
-git branch -D <nome>                                # Forza eliminazione
-git branch -m <nuovo_nome>                          # Rinomina ramo
+`git commit -m "Messaggio"` - crea un commit con messaggio
 
--------------------------------------------------
-6) Checkout & Switch
--------------------------------------------------
-git checkout <branch>                               # Cambia ramo (storico)
-git checkout -b <nuovo_branch>                      # Crea e cambia
-git switch <branch>                                 # Cambia ramo (moderno)
-git switch -c <nuovo_branch>                        # Crea e cambia (moderno)
+`git commit --amend` - modifica l'ultimo commit
 
--------------------------------------------------
-7) Merge & Rebase
--------------------------------------------------
-git merge <branch>                                  # Merge
-git merge --no-ff <branch>                          # Merge con commit esplicito
-git rebase <branch>                                 # Rebase lineare
-git rebase -i <base>                                # Rebase interattivo
-git rebase --abort                                  # Annulla rebase
-git rebase --continue                               # Continua rebase
+`git reset <file>` - rimuove un file dallo stage
 
--------------------------------------------------
-8) Remote
--------------------------------------------------
-git remote -v                                       # Lista remoti
-git remote add origin <url>                         # Aggiungi remoto
-git remote remove origin                            # Rimuovi remoto
-git remote rename origin upstream                   # Rinomina remoto
+`git reset --soft HEAD~1` - annulla l'ultimo commit mantenendo le modifiche
 
--------------------------------------------------
-9) Push & Pull
--------------------------------------------------
-git push                                            # Push default
-git push -u origin <branch>                         # Imposta upstream
-git push --force-with-lease                         # Force push sicuro
-git pull                                            # Fetch + merge
-git pull --rebase                                   # Fetch + rebase
+`git reset --hard HEAD~1` - annulla l'ultimo commit eliminando le modifiche
 
--------------------------------------------------
-10) Stash
--------------------------------------------------
-git stash                                           # Stash rapido
-git stash push -m "msg"                             # Stash con messaggio
-git stash list                                      # Elenca stashes
-git stash apply [stash@{n}]                         # Applica senza rimuovere
-git stash pop [stash@{n}]                           # Applica e rimuove
-git stash drop [stash@{n}]                          # Rimuove uno stash
-git stash clear                                     # Pulisce tutti gli stash
 
--------------------------------------------------
-11) Tag
--------------------------------------------------
-git tag                                             # Elenco tag
-git tag <nome>                                      # Tag leggero
-git tag -a <nome> -m "msg"                          # Tag annotato
-git push --tags                                     # Push di tutti i tag
-git tag -d <nome>                                   # Elimina tag locale
-git push origin :refs/tags/<nome>                   # Elimina tag remoto
+### 5. Branching
 
--------------------------------------------------
-12) Pulizia e manutenzione
--------------------------------------------------
-git clean -n                                        # Dry-run dei file non tracciati
-git clean -fd                                       # Rimuove file/dir untracked
-git prune                                           # Rimuove oggetti orfani
-git gc                                              # Garbage collection
+`git branch` - elenca i branch locali
 
--------------------------------------------------
-13) Comandi avanzati
--------------------------------------------------
-git reflog                                          # Cronologia movimenti HEAD
-git cherry-pick <commit>                            # Porta commit altrove
-git bisect start                                    # Binary search dei bug
-git bisect good                                     # Marca commit buono
-git bisect bad                                      # Marca commit cattivo
-git blame <file>                                    # Autori per riga
-git rev-parse HEAD                                  # Hash HEAD
-git shortlog                                        # Riassunto per autore
-git archive -o out.zip HEAD                         # Esporta snapshot
+`git branch <nome>` - crea un nuovo branch
 
--------------------------------------------------
-14) Troubleshooting e recovery
--------------------------------------------------
-# Recupero
-git reflog                                          # Trova hash persi
-git reset --hard <hash>                             # Torna ad uno stato noto
+`git branch -d <nome>` - elimina un branch già mergiato
 
-# Conflitti
-git merge --abort                                   # Annulla un merge in corso
-git rebase --abort                                  # Annulla un rebase in corso
+`git branch -D <nome>` - elimina forzatamente un branch
 
-# Rami divergenti
-git pull --rebase --autostash                       # Allinea in modo pulito
+`git branch -m <nuovo_nome>` - rinomina il branch corrente
 
--------------------------------------------------
-15) Workflow e best practice
--------------------------------------------------
-# Commit atomici e messaggi significativi
-# Convenzioni: tipo(scope)!: descrizione (es. Conventional Commits)
 
-# Branching
-feature/<nome>, fix/<ticket>, hotfix/<ticket>, release/<versione>
+### 6. Checkout e switch
 
-# Proteggi main/default
-# - Abilita branch protection rules sul remoto
-# - Richiedi PR + review + build CI verde
+`git checkout <branch>` - passa a un branch (comando classico)
 
--------------------------------------------------
-16) Comandi e pattern avanzati per DevOps / CI/CD
--------------------------------------------------
-# 16.1 Clonazioni efficienti per pipeline
-git clone --depth 1 <url>                           # riduce tempo e banda
-git fetch --depth=1 origin <branch>                 # fetch superficiale
-git fetch --prune --tags                            # allinea tag e rimuove rami remoti eliminati
+`git checkout -b <nuovo_branch>` - crea e passa a un nuovo branch
 
-# 16.2 Checkout deterministico
-git checkout --force <hash>                         # build riproducibili per commit
+`git switch <branch>` - passa a un branch (comando moderno)
 
-# 16.3 Selezione diff per job condizionali
-# (utile in pipeline per eseguire solo test affetti)
-git diff --name-only origin/main...HEAD             # lista file cambiati nel PR
+`git switch -c <nuovo_branch>` - crea e passa a un nuovo branch (moderno)
 
-# 16.4 Calcolo versione semantica da tag
-last_tag=$(git describe --tags --abbrev=0)          # ultimo tag
-count_since=$(git rev-list --count ${last_tag}..HEAD)
-echo "${last_tag}+build.${count_since}"             # esempio di versione build
 
-# 16.5 Annotare build metadata
-git describe --tags --always --dirty                # stringa versione human-friendly
+### 7. Merge e rebase
 
-# 16.6 Gestione submodules (monorepo / componenti)
-git submodule add <url> path                        # aggiungi submodule
-git submodule update --init --recursive             # inizializza/aggiorna
-git submodule sync --recursive                      # sincronizza url remoti
+`git merge <branch>` - unisce un branch nel branch corrente
 
-# 16.7 Sparse checkout per repo grandi
-git sparse-checkout init --cone
-git sparse-checkout set path/solo-necessario        # checkout parziale
+`git merge --no-ff <branch>` - merge con commit esplicito
 
-# 16.8 Git Worktree per build parallele
-git worktree add ../build-wt <branch>               # crea working tree separato
-git worktree remove ../build-wt                     # rimuove worktree
+`git rebase <branch>` - riallinea i commit in modo lineare
 
-# 16.9 Firmare commit/tag (supply chain)
-git config --global commit.gpgsign true             # firma commit
-git tag -s v1.2.3 -m "release firmata"              # tag firmato
+`git rebase -i <base>` - rebase interattivo
 
-# 16.10 Trace e debug di performance in CI
-GIT_TRACE=1 GIT_CURL_VERBOSE=1 git fetch            # diagnostica rete
+`git rebase --abort` - annulla un rebase in corso
 
-# 16.11 Pulizia cache CI tra job
-git clean -fdx                                      # rimuove TUTTO non tracciato (attenzione)
+`git rebase --continue` - continua un rebase dopo la risoluzione conflitti
 
-# 16.12 Strategie di merge protette
-git merge --ff-only                                 # evita merge commit inattesi
 
-# 16.13 Refspec per fetch selettivi
-git fetch origin "+refs/heads/release/*:refs/remotes/origin/release/*"
+### 8. Remote
 
-# 16.14 Recupero artefatti su commit specifici
-git checkout <tag|hash>                             # ricostruzione da tag/commit
+`git remote -v` - mostra i repository remoti configurati
 
-# 16.15 Bisect automatizzato in CI
-# Esempio: script che ritorna 0/1 per buono/cattivo
-# git bisect start; git bisect bad; git bisect good <hash_buono>; git bisect run ./test.sh
+`git remote add origin <url>` - aggiunge un repository remoto
 
-# 16.16 Strategie per versioning automatico
-# - Conventional Commits + changelog generato
-# - git rev-list --count <tag>..HEAD per build number
-# - git describe per pre-release
+`git remote remove origin` - rimuove un remoto
 
-# 16.17 Gestione LFS (Large File Storage)
-git lfs install
-git lfs track "*.bin"                               # traccia file grandi
-git add .gitattributes
+`git remote rename origin upstream` - rinomina un remoto
 
-# 16.18 Mirror repository (backup/DR)
-git clone --mirror <url>                            # mirror bare
-git remote add --mirror=push backup <url-backup>    # push speculare
 
-# 16.19 Pulizia riferimenti obsoleti in runner
-git remote prune origin                             # rimuove rami remoti rimossi
+### 9. Push e pull
 
-# 16.20 Cache di dipendenze guidata da hash
-git rev-parse HEAD > .git/ci-build-hash            # salva hash per cache key
+`git push` - invia i commit al remoto predefinito
 
-# 16.21 Rebase/merge policy in CI
-# - fallire il job se il branch non è aggiornato con la base
-#   git fetch origin main && git merge-base --is-ancestor origin/main HEAD || exit 1
+`git push -u origin <branch>` - imposta upstream e invia il branch
 
-# 16.22 Generare changelog tra due ref
-git log --pretty=format:"* %h %s (%an)" <from>..<to>
+`git push --force-with-lease` - force push più sicuro
 
-# 16.23 Filtrare commit per cartella (monorepo)
-git log --oneline -- <path/>
+`git pull` - scarica e integra modifiche (fetch + merge)
 
-# 16.24 Validare firme in CI (SLSA/SSDF)
-git verify-commit <hash>
-git verify-tag <tag>
+`git pull --rebase` - scarica e integra modifiche con rebase
 
-# 16.25 Evitare file secrets nel repo
-# - usa .gitignore e secret scan (git secrets / trufflehog)
 
--------------------------------------------------
-17) Ganci (Git hooks) per automazioni locali
--------------------------------------------------
-# I ganci si trovano in .git/hooks/. Esempi:
-# - pre-commit: lint/test veloci prima del commit
-# - commit-msg: valida formato dei messaggi
-# - pre-push: esegue test o build rapida
+### 10. Stash
 
-# Esempio commit-msg (Conventional Commits):
-# .git/hooks/commit-msg (ricorda chmod +x)
-#
-# #!/usr/bin/env bash
-# msg_file="$1"
-# msg=$(head -n1 "$msg_file")
-# if ! echo "$msg" | grep -Eq '^(feat|fix|docs|style|refactor|perf|test|chore)(\(.+\))?!?: .+'; then
-#   echo "Messaggio commit non conforme a Conventional Commits" >&2
-#   exit 1
-# fi
+`git stash` - salva temporaneamente le modifiche non committate
 
-Note di sicurezza
------------------
-- Evita "git push --force" su rami condivisi; preferisci "--force-with-lease".
-- Verifica sempre cosa verrà eliminato prima di usare "git clean -fdx".
-- Proteggi i rami principali con regole sul remoto e richiedi CI verde.
+`git stash push -m "msg"` - salva uno stash con messaggio
 
-Riferimenti utili
------------------
-- Documentazione ufficiale Git: https://git-scm.com/docs
-- Pro Git (libro gratuito): https://git-scm.com/book
+`git stash list` - elenca gli stash disponibili
+
+`git stash apply [stash@{n}]` - applica uno stash senza rimuoverlo
+
+`git stash pop [stash@{n}]` - applica e rimuove uno stash
+
+`git stash drop [stash@{n}]` - elimina uno stash specifico
+
+`git stash clear` - elimina tutti gli stash
+
+
+### 11. Tag
+
+`git tag` - elenca i tag
+
+`git tag <nome>` - crea un tag leggero
+
+`git tag -a <nome> -m "msg"` - crea un tag annotato
+
+`git push --tags` - invia tutti i tag al remoto
+
+`git tag -d <nome>` - elimina un tag locale
+
+`git push origin :refs/tags/<nome>` - elimina un tag remoto
+
+
+### 12. Pulizia e manutenzione
+
+`git clean -n` - anteprima dei file non tracciati da rimuovere
+
+`git clean -fd` - rimuove file e cartelle non tracciati
+
+`git prune` - rimuove oggetti orfani
+
+`git gc` - esegue garbage collection del repository
+
+
+### 13. Comandi avanzati
+
+`git reflog` - mostra la cronologia dei movimenti di HEAD
+
+`git cherry-pick <commit>` - applica un commit specifico su un altro branch
+
+`git bisect start` - avvia la ricerca binaria di un bug
+
+`git bisect good` - marca un commit come buono
+
+`git bisect bad` - marca un commit come problematico
+
+`git blame <file>` - mostra autore e commit per ogni riga
+
+`git rev-parse HEAD` - mostra l'hash del commit corrente
+
+`git shortlog` - riepiloga i contributi per autore
+
+`git archive -o out.zip HEAD` - esporta uno snapshot del repository
+
+
+### 14. Troubleshooting e recovery
+
+`git reflog` - recupera hash recenti anche dopo reset o rebase
+
+`git reset --hard <hash>` - torna a uno stato noto del repository
+
+`git merge --abort` - annulla un merge in corso
+
+`git rebase --abort` - annulla un rebase in corso
+
+`git pull --rebase --autostash` - riallinea branch divergenti mantenendo modifiche locali
+
+
+### 15. Workflow e best practice
+
+`Conventional Commits (es. feat:, fix:, docs:)` - usa messaggi di commit coerenti e leggibili
+
+`feature/<nome>, fix/<ticket>, hotfix/<ticket>, release/<versione>` - adotta una convenzione di naming per i branch
+
+`Branch protection su main/default` - richiedi pull request, review e CI verde
+
+
+### 16. Comandi avanzati per DevOps e CI/CD
+
+`git clone --depth 1 <url>` - clonazione veloce per pipeline
+
+`git fetch --depth=1 origin <branch>` - fetch superficiale del branch
+
+`git fetch --prune --tags` - aggiorna tag e pulisce riferimenti remoti obsoleti
+
+`git checkout --force <hash>` - checkout deterministico per build riproducibili
+
+`git diff --name-only origin/main...HEAD` - elenca file cambiati per job condizionali
+
+`last_tag=$(git describe --tags --abbrev=0)` - recupera l'ultimo tag
+
+`count_since=$(git rev-list --count ${last_tag}..HEAD)` - conta i commit dal tag
+
+`echo "${last_tag}+build.${count_since}"` - genera una versione build
+
+`git describe --tags --always --dirty` - genera metadati versione human-friendly
+
+`git submodule add <url> path` - aggiunge un submodule
+
+`git submodule update --init --recursive` - inizializza e aggiorna submodule
+
+`git submodule sync --recursive` - sincronizza URL dei submodule
+
+`git sparse-checkout init --cone` - abilita sparse checkout
+
+`git sparse-checkout set path/solo-necessario` - scarica solo i percorsi necessari
+
+`git worktree add ../build-wt <branch>` - crea una working tree separata
+
+`git worktree remove ../build-wt` - rimuove la working tree separata
+
+`git config --global commit.gpgsign true` - abilita firma automatica dei commit
+
+`git tag -s v1.2.3 -m "release firmata"` - crea un tag firmato
+
+`GIT_TRACE=1 GIT_CURL_VERBOSE=1 git fetch` - abilita trace e debug rete
+
+`git clean -fdx` - pulizia completa di file non tracciati (attenzione)
+
+`git merge --ff-only` - evita merge commit non previsti
+
+`git fetch origin "+refs/heads/release/*:refs/remotes/origin/release/*"` - fetch selettivo con refspec
+
+`git checkout <tag|hash>` - recupera stato da tag o commit specifico
+
+`git bisect run ./test.sh` - automatizza il bisect con script di test
+
+`git lfs install` - inizializza Git LFS
+
+`git lfs track "*.bin"` - traccia file grandi con LFS
+
+`git add .gitattributes` - aggiunge le regole LFS
+
+`git clone --mirror <url>` - crea mirror bare del repository
+
+`git remote add --mirror=push backup <url-backup>` - configura push mirror verso backup
+
+`git remote prune origin` - rimuove riferimenti remoti non più esistenti
+
+`git rev-parse HEAD > .git/ci-build-hash` - salva hash commit per chiavi cache
+
+`git fetch origin main && git merge-base --is-ancestor origin/main HEAD || exit 1` - verifica branch aggiornato in CI
+
+`git log --pretty=format:"* %h %s (%an)" <from>..<to>` - genera changelog tra due ref
+
+`git log --oneline -- <path/>` - filtra i commit per cartella
+
+`git verify-commit <hash>` - valida firma di un commit
+
+`git verify-tag <tag>` - valida firma di un tag
+
+
+### 17. Git hooks per automazioni locali
+
+`pre-commit` - esegue lint o test veloci prima del commit
+
+`commit-msg` - valida il formato del messaggio di commit
+
+`pre-push` - esegue test o build rapida prima del push
+
+`#!/usr/bin/env bash` - shebang tipico per script hook
+
+`msg_file="$1"` - legge il file del messaggio commit
+
+`msg=$(head -n1 "$msg_file")` - estrae la prima riga del messaggio
+
+`if ! echo "$msg" | grep -Eq '^(feat|fix|docs|style|refactor|perf|test|chore)(\(.+\))?!?: .+'; then ... fi` - valida Conventional Commits
+
+
+### Note di sicurezza
+
+`git push --force-with-lease` - preferiscilo a `git push --force` su branch condivisi
+
+`git clean -fdx` - verifica sempre prima cosa verrà eliminato
+
+`branch protection` - proteggi i branch principali e richiedi CI verde
+
+
+### Riferimenti utili
+
+`https://git-scm.com/docs` - documentazione ufficiale Git
+
+`https://git-scm.com/book` - libro Pro Git (gratuito)
