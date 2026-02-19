@@ -24,11 +24,11 @@ googleAnalytics = "G-Q65DHKN9L0"
 [imaging]
   anchor = 'Center'
 
-[taxonomies]
-  tag = "tags"
-  category = "categories"
-  author = "authors"
-  series = "series"
+#[taxonomies]
+#  tag = "tags"
+#  category = "categories"
+#  author = "authors"
+#  series = "series"
 
 [sitemap]
   changefreq = 'daily'
