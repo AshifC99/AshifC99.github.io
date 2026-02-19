@@ -2,8 +2,8 @@
 title: "50+ comandi Git"
 description: "50+ comandi Git che qualunque sviluppatore dovrebbe sapere"
 date: 2026-02-18
-author: "Ashif C."
-tags: ["welcome", "new", "about", "first"]
+author: "Ashif"
+tags: ["git", "commands", "cheatsheet"]
 ---
 
 # comandi Git che qualunque sviluppatore dovrebbe sapere

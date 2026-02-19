@@ -3,6 +3,7 @@ title: "Chi sono"
 description: "This is about Ashif C."
 date: "16 Feb 2026"
 author: "Ashif"
+tags: ["about", "welcome"]
 ---
 
 # Benvenuto sul mio Portfolio!
