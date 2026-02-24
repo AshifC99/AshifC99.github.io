@@ -3,9 +3,14 @@
   {{ with .Site.Language.Params.htmlCode | default .Site.LanguageCode }}
     <meta http-equiv="content-language" content="{{ . }}">
   {{ end }}
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="theme-color">
+  <meta name="theme-color" content="#5711d9">
+  <meta name="application-name" content="Ashif C. - Portfolio">
+  <meta name="apple-mobile-web-app-title" content="Ashif C. - Portfolio">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#5711d9">
+  <meta name="image" content="https://ashif.eu/avatar.png">
 
   {{/* Title */}}
   {{ if .IsHome }}
@@ -175,9 +180,16 @@
   {{ if templates.Exists "partials/favicons.html" }}
     {{ partialCached "favicons.html" .Site }}
   {{ else }}
+    <link rel="icon" type="image/png" sizes="1024x1024" href="{{ "maskable-1024x1024.png" | relURL }}">
+    <link rel="icon" type="image/png" sizes="800x800" href="{{ "Squircle-800x800.png" | relURL }}">
+    <link rel="icon" type="image/png" sizes="512x512" href="{{ "android-chrome-512x512.png" | relURL }}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ "android-chrome-192x192.png" | relURL }}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ "apple-touch-icon.png" | relURL }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32x32.png" | relURL }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon-16x16.png" | relURL }}">
+    <link rel="icon" type="image/svg" href="{{ "icon.svg" | relURL }}">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon-32x32-png">
+    <link rel="mask-icon" href="/icon.svg" color="#5711d9">
     <link rel="manifest" href="{{ "site.webmanifest" | relURL }}">
   {{ end }}
 

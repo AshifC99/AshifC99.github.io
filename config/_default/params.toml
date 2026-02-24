@@ -14,12 +14,12 @@ enableSearch = true
 enableCodeCopy = true
 enableCodeLineNumbers = true
 enableStructuredBreadcrumbs = true
- enableStyledScrollbar = true # disable to use native scrollbar style (defaults to true)
+enableStyledScrollbar = true # disable to use native scrollbar style (defaults to true)
 
 replyByEmail = false
 
 # mainSections = ["section1", "section2"]
-# robots = ""
+ robots = "index, follow" # valid options: index, follow,
 
 disableImageOptimization = false
 disableImageOptimizationMD = false
@@ -154,8 +154,8 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
 [umamiAnalytics]
    websiteid = "5bf52e62-b3f8-4887-9d76-c6e4e0a8b227"
    domain = "ashif.eu"
-  # dataDomains = "ashif.eu"
-  # scriptName = ""
+   dataDomains = "ashif.eu"
+   scriptName = "https://cloud.umami.is/script.js"
    enableTrackEvent = true
 
 [selineAnalytics]
