@@ -86,10 +86,10 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showPagination = true
   invertPagination = false
   showReadingTime = true
-  showTableOfContents = false
+  showTableOfContents = true
   # showRelatedContent = false
   # relatedContentLimit = 3
-  showTaxonomies = false # use showTaxonomies OR showCategoryOnly, not both
+  showTaxonomies = true # use showTaxonomies OR showCategoryOnly, not both
   showCategoryOnly = false # use showTaxonomies OR showCategoryOnly, not both
   showAuthorsBadges = false
   showWordCount = true
@@ -99,15 +99,15 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
 
 [list]
   showHero = true
-  # heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
-  layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
-  layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
+   heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  layoutBackgroundBlur = false # only used when heroStyle equals background or thumbAndBackground
+  layoutBackgroundHeaderSpace = false # only used when heroStyle equals background
   showBreadcrumbs = true
-  showSummary = false
+  showSummary = true
   showViews = false
   showLikes = false
-  showTableOfContents = false
-  showCards = false
+  showTableOfContents = true
+  showCards = true
   orderByWeight = false
   groupByYear = true
   cardView = false
@@ -118,14 +118,14 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   excludedKinds = ["taxonomy", "term"]
 
 [taxonomy]
-  showTermCount = true
-  showHero = false
-  # heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
-  showBreadcrumbs = false
+  showTermCount = false
+  showHero = true
+   heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  showBreadcrumbs = true
   showViews = false
   showLikes = false
-  showTableOfContents = false
-  cardView = false
+  showTableOfContents = true
+  cardView = true
 
 [term]
   showHero = false
@@ -153,14 +153,14 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
 
 [umamiAnalytics]
    websiteid = "5bf52e62-b3f8-4887-9d76-c6e4e0a8b227"
-   domain = "https://cloud.umami.is/script.js"
+   domain = "cloud.umami.is"
    #dataDomains = "ashif.eu"
    #scriptName = "https://cloud.umami.is/script.js"
    enableTrackEvent = true
 
 [selineAnalytics]
-  # token = "XXXXXX"
-  # enableTrackEvent = true
+   token = "cbe5ce0ebaea7f3"
+   enableTrackEvent = true
 
 [buymeacoffee]
    identifier = "ashifc"
