@@ -2,6 +2,7 @@
 public/
 resources/
 exampleSite/resources/
+/themes/blowfish/example
 
 # Binaries for programs and plugins
 *.exe
@@ -41,3 +42,4 @@ ga-pageviews.csv
 .idea
 .Ulysses-Group.plist
 .Ulysses-Settings.plist
+
