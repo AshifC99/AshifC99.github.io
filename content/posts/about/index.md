@@ -1,16 +1,22 @@
 ---
 title: "Chi sono"
-description: "This is about Ashif C."
+description: "Scopri di più su Ashif C., il mio background e la mia passione per la tecnologia."
 date: "16 Feb 2026"
 author: "Ashif"
-tags: ["about", "welcome"]
+tags: ["about", "welcome", "bio"]
 ---
 
-# Benvenuto sul mio Portfolio!
+# Benvenuto sul mio Portfolio! 👋
 
-Sono un appassionato di informatica e di tutto ciò che riguarda il mondo della tecnologia.
-Ogni giorno cerco di imparare qualcosa di nuovo e migliorare le mie conoscenze.
+Ciao, sono Ashif! Sono un grande appassionato di informatica e di tutto ciò che circonda il mondo della tecnologia. Per me, il tech non è solo codice, ma un'opportunità continua per esplorare, creare soluzioni e affrontare nuove sfide. Ogni giorno dedico del tempo per scoprire qualcosa di nuovo e ampliare le mie competenze. 💡
 
-Attualmente lavoro nel Front-Desk di un Hotel e frequento il corso [***"Edge Developer"***](https://www.itsprodigi.it/corsi/edge-developer/ "ITS Prodigi") presso **ITS Prodigi**.
+### Cosa faccio? 🚀
 
+Attualmente lavoro nel Front-Desk di un Hotel, un'esperienza che mi sta insegnando tantissimo sulla gestione del cliente, la comunicazione efficace e il problem-solving. Parallelamente a questo percorso, sto costruendo il mio futuro nel mondo dello sviluppo web e software.
+
+Frequento con entusiasmo il corso [***"Edge Developer"***](https://www.itsprodigi.it/corsi/edge-developer/ "ITS Prodigi") presso **ITS Prodigi**, dove sto affinando le mie capacità pratiche e teoriche per diventare un professionista del settore IT.
+
+🔗 **Curioso di sapere cosa sto studiando?**
 Trovi il mio programma di studi [**qui**](Programma_corso_ITS_EDGE_DEVELOPER.pdf "PROGRAMMA DEL CORSO").
+
+Grazie per aver visitato il mio spazio web. Sentiti libero di esplorare i miei progetti o di contattarmi! 😊
