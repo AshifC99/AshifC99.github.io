@@ -45,7 +45,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   layout = "fixed-fill-blur" # valid options: basic, fixed, fixed-fill, fixed-gradient, fixed-fill-blur
 
 [footer]
-  showMenu = false
+  showMenu = true
   showCopyright = true
   showThemeAttribution = false
   showAppearanceSwitcher = true
@@ -55,7 +55,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   layout = "background" # valid options: page, profile, hero, card, background, custom
   homepageImage = "Logos/Cover mobile.png" # used in: hero, and card
   showRecent = true
-  showRecentItems = 10
+  showRecentItems = 20
   showMoreLink = true
   showMoreLinkDest = "/posts/"
   cardView = true
