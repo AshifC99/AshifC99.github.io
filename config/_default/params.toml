@@ -65,7 +65,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
 
 [article]
   showDate = false
-   dateFormat = "Mon 02 Jan 2006" # https://golang.org/pkg/time/#Time.Format
+   dateFormat = "January 2, 2006" # https://golang.org/pkg/time/#Time.Format
   showViews = false
   showLikes = false
   showDateOnlyInArticle = true # if true, the date will only be shown in the article page, not in the article list
@@ -174,7 +174,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   bing = "8ADEEC0DE14F8A706F410E4FEE3137A0"
   # pinterest = ""
   # yandex = ""
-  # fediverse = ""
+   fediverse = "@AshifC@mastodon.social"
 
 [rssnext]
   # feedId = ""

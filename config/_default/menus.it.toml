@@ -13,7 +13,7 @@
 
 [[main]]
   name = "Chi sono"
-  pageRef = "/posts/about/"
+  pageRef = "posts/about/"
   weight = 10
 
 #[[main]]
@@ -36,11 +36,11 @@
 #  pageRef = "tags/interesting-topic"
 #  weight = 10
 
-#[[subnavigation]]
-#  name = "My Awesome Category"
-#  pre = "github"
-#  pageRef = "categories/awesome"
-#  weight = 20
+[[subnavigation]]
+  name = "Password Generator"
+  pre = "lock"
+  pageRef = "/posts/password-generator"
+  weight = 20
 
 #[[main]]
 #  name = "Categories"
@@ -58,10 +58,10 @@
 # the copyright notice. Configure as per the main menu above.
 
 
-#  [[footer]]
-#    name = "Tags"
-#    pageRef = "tags"
-#    weight = 10
+  [[footer]]
+    name = "Tags"
+    pageRef = "tags"
+    weight = 10
 
 #  [[footer]]
 #    name = "Categories"

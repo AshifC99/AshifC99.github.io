@@ -6,6 +6,18 @@ theme = "blowfish"
 baseURL = "https://ashif.eu/"
 defaultContentLanguage = "it"
 
+[languages]
+  [languages.it]
+    contentDir = 'content/it'
+    languageCode = 'it-IT'
+    languageName = 'Italiano'
+    weight = 2
+  [languages.en]
+    contentDir = 'content/en'
+    languageCode = 'en-US'
+    languageName = 'English'
+    weight = 1
+
 pluralizeListTitles = true # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
 
 enableRobotsTXT = true
@@ -24,10 +36,10 @@ enableEmoji = true
 [imaging]
   anchor = 'Center'
 
-#[taxonomies]
-#  tag = "tags"
+[taxonomies]
+  tag = "tags"
 #  category = "categories"
-#  author = "authors"
+  author = "authors"
 #  series = "series"
 
 [sitemap]
