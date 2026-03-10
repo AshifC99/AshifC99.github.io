@@ -11,7 +11,7 @@ title = "Ashif C."
   dateFormat = "January 2, 2006"
   logo = "Logos/110x110/-3 Circle 110x110.png"
   secondaryLogo = "Logos/avatar.png"
-  description = "Ashif's Portfolio"
+  description = "Edge Developer & tech enthusiast building modern applications on edge computing and serverless architectures. I work and study: Web development: User Experience Design, HTML, CSS, JavaScript/TypeScript. Smart Industry and Smart Specialization Strategy – S3 business data analysis, Industry 5.0: Intelligent and sustainable enterprise, Ecological transition and Digital transition, Digital strategy and data analytics. Machine ethics and Artificial Intelligence. CMS - Content Management System: Digital content construction, WordPress. Business Intelligence: SQL databases, NoSQL, Big Data, Data Warehouse, Data Shaping, Google Analytics, Microsoft Power BI (Business Intelligence). Programming fundamentals: C++ programming, JAVA programming. ICT application implementation: C#, Python, Software testing. Transition 5.0: Edge computing development integrated with AI tools: Machine Learning-ML.Net, Edge Computing Topologies, Energy efficiency in Edge computing systems (ISO 50001), Project work, Insights into digital innovations."
   copyright = "&copy; 2026 Ashif C. - All rights reserved."
 
 [params.author]
@@ -19,8 +19,8 @@ title = "Ashif C."
   email = "ashifc99.github.io.bounce673@passfwd.com"
   image = "Logos/avatar.gif"
   imageQuality = 100
-  headline = "{ Edge Developer }"
-  bio = "{ Edge Developer }"
+  headline = "{ Edge Developer & Tech Enthusiast }"
+  bio = "I'm an Edge Developer and tech enthusiast learning to build modern applications on distributed infrastructure, with a focus on performance, serverless, and developer experience. In my spare time, I enjoy experimenting with ESP32."
    links = [
       { link = "https://ashif.eu/" },
       { email = "mailto:ashifc99.github.io.bounce673@passfwd.com" },

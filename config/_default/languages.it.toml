@@ -11,7 +11,7 @@ title = "Ashif C."
   dateFormat = "2 January 2006"
   logo = "Logos/110x110/-3 Circle 110x110.png"
   secondaryLogo = "Logos/avatar.png"
-  description = "Portfolio di Ashif C."
+  description = "Edge Developer & tech enthusiast che costruisce applicazioni moderne su edge computing e architetture serverless. Lavoro e studio su: Web developing: User Experience Design, HTML, CSS, JavaScript/TypeScript. Smart Industry e Smart Specialisation Strategy – S3 analisi dei dati aziendali, Industria 5.0: Impresa intelligente e sostenibile, Transizione ecologica e Transizione Digitale, Digital Strategy e data analytics. Etica delle macchine e Intelligenza Artificiale CMS - Content Management System: Costruzione di contenuti digitali, Wordpress. Business Intelligence: Database SQL, NoSQL, Big Data, Data Warehouse, Data Shaping, Google Analytics, Microsoft power BI (Business Intelligence. Fondamenti di programmazione: programmazione C++, programmazione JAVA. Implementazione applicazioni ICT: C#, Python, Testing del software Transizione 5.0: sviluppo di Edge computing integrato con strumenti di A.I: Machine Learning-ML.Net, Topologie di Edge Computing, Efficienza energetica nei sistemi di Edge computing (ISO 50001), Project work, Approfondimenti sulle novità in ambito digitale."
   copyright = "&copy; 2026 Ashif C. - Tutti i diritti riservati."
 
 [params.author]
@@ -19,8 +19,8 @@ title = "Ashif C."
   email = "ashifc99.github.io.bounce673@passfwd.com"
   image = "Logos/avatar.gif"
   imageQuality = 100
-  headline = "{ Edge Developer }"
-  bio = "{ Edge Developer }"
+  headline = "{ Edge Developer & Tech Enthusiast }"
+  bio = "Sono un Edge Developer e tech enthusiast che sta imparando a costruire applicazioni moderne su infrastrutture distribuite, con un focus su performance, serverless ed esperienza sviluppatore. Nel tempo libero mi diverto facendo diversi esperimenti con ESP32."
    links = [
 #     { link = "https://ashif.eu/" },
 #     { email = "mailto:ashifc99.github.io.bounce673@passfwd.com" },
