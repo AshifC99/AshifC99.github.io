@@ -6,5 +6,6 @@ author: "Ashif"
 tags: ["password", "security", "tool", "generator", "web"]
 ---
 
+Here is a secure and interactive password generator you can use directly from your browser. It runs entirely on your device, ensuring your passwords are never sent over the internet.
 
-{{< embed-resource-iframe src="password_generator.html" title="Password Generator" height="900" >}}
+{{< password-generator-en >}}

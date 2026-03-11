@@ -7,4 +7,4 @@ tags: ["password", "security", "tool", "generator", "web"]
 ---
 
 
-{{< embed-resource-iframe src="password_generator.html" title="Password Generator" height="900" >}}
+{{< password-generator-it >}}
