@@ -1,0 +1,11 @@
+@font-face {
+    font-family: font;
+    src: url('/fonts/Iosevka_Charon/IosevkaCharon-Regular.ttf');
+}
+
+/* Applica il font al corpo del sito o a elementi specifici */
+
+html {
+    font-family: font;
+    font-size: 13pt;
+}
