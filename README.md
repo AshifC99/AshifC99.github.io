@@ -10,11 +10,11 @@ https://ashif.eu
 
 Hi, I'm Ashif! I'm a huge computer science enthusiast and passionate about everything surrounding the tech world. For me, tech isn't just code, but a continuous opportunity to explore, create solutions, and face new challenges. Every day I dedicate time to discover something new and expand my skills. 💡
 
-### What do I do? 🚀
+### What do I do?
 
 I currently work at the Front-Desk of a Hotel, an experience that is teaching me a lot about customer management, effective communication, and problem-solving. Parallel to this path, I am building my future in the world of web and software development.
 
-### Curious to know what I'm studying? 🔗
+### Curious to know what I'm studying?
 I am enthusiastically attending the [***"Edge Developer"***](https://www.itsprodigi.it/corsi/edge-developer/ "ITS Prodigi") course at **ITS Prodigi**, where I am refining my practical and theoretical skills to become an IT professional.
 
 You can find my syllabus [**here**](content/en/posts/about/Programma_corso_ITS_EDGE_DEVELOPER.pdf "Edge Developer Course Syllabus").
