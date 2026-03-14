@@ -14,7 +14,7 @@ Ciao, sono Ashif! Sono un grande appassionato di informatica e di tutto ciò che
 
 Attualmente lavoro nel Front-Desk di un Hotel, un'esperienza che mi sta insegnando tantissimo sulla gestione del cliente, la comunicazione efficace e il problem-solving. Parallelamente a questo percorso, sto costruendo il mio futuro nel mondo dello sviluppo web e software.
 
-### Curioso di sapere cosa sto studiando? 🔗
+### Curioso di sapere cosa sto studiando?
 Frequento con entusiasmo il corso [***"Edge Developer"***](https://www.itsprodigi.it/corsi/edge-developer/ "ITS Prodigi") presso **ITS Prodigi**, dove sto affinando le mie capacità pratiche e teoriche per diventare un professionista del settore IT.
 
 Se hai piacere, trovi il mio programma di studi [**qui**](Programma_corso_ITS_EDGE_DEVELOPER.pdf "Programma del percorso Edge Developer").

@@ -8,7 +8,7 @@ tags: ["about", "welcome", "bio", "Edge Developer", "Edge Computing", "Coding En
 
 # Welcome to my Portfolio! 👋
 
-Hi, I'm Ashif! I'm a huge computer science enthusiast and passionate about everything surrounding the tech world. For me, tech isn't just code, but a continuous opportunity to explore, create solutions, and face new challenges. Every day I dedicate time to discover something new and expand my skills. 💡
+Hi, I'm Ashif! I'm a huge computer science enthusiast and passionate about everything surrounding the tech world. For me, tech isn't just code, but a continuous opportunity to explore, create solutions, and face new challenges. Every day I dedicate time to discover something new and expand my skills.
 
 ### What do I do?
 
