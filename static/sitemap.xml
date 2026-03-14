@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://ashif.eu/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/posts/about/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/posts/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/en/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/posts/sql-commands/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/tags/sql/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/tags/database/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/tags/cheatsheet/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/tags/backend/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/posts/password-generator/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/tags/password/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/tags/security/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/tags/tool/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/tags/generator/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/tags/web/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/posts/csharp-basics/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/tags/csharp/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/tags/dotnet/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/tags/c%23/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/tags/programming/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/tags/developer/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/posts/cpp-advanced/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/tags/cpp/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/tags/c++/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/tags/advanced/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/tags/architecture/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/posts/cpp-basics/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/posts/javascript-basics/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/tags/javascript/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/tags/js/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/tags/webdev/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/tags/frontend/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/tags/es6/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/posts/docker/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/tags/docker/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/tags/devops/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/tags/containers/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/posts/vscode-shortcuts/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/tags/vscode/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/tags/editor/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/tags/productivity/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/posts/linux-commands/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/tags/linux/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/tags/terminal/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/posts/git-commands/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/tags/git/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/tags/commands/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/posts/en/about/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/tags/about/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/tags/welcome/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/tags/bio/</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/posts/about/Programma_corso_ITS_EDGE_DEVELOPER.pdf</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/embedded/index/password_generator.html</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ashif.eu/posts/en/about/Programma_corso_ITS_EDGE_DEVELOPER.pdf</loc>
+  <lastmod>2026-03-05T20:35:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
