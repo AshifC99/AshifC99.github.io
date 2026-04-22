@@ -37,6 +37,7 @@ title = "Ashif C."
 #     { foursquare = "https://foursquare.com/username" },
       { github = "https://github.com/AshifC99" },
       { gitlab = "https://gitlab.com/AshifC99" },
+      { forgejo = "https://code.ashif.eu/ashif" },
 #     { google = "https://www.google.com/" },
 #     { hashnode = "https://ashifc99.hashnode.dev" },
       { instagram = "https://instagram.com/_.ashif._" },
